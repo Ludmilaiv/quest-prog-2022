@@ -1,0 +1,145 @@
+.level-b
+  height: 100vh
+  background-color: #2f3a9c
+  background-image: url('./img/background.jpg') 
+  background-size: cover
+  padding-top: 2vh
+
+  &__container
+    width: 100%
+    max-width: 70rem
+    height: 35rem
+    border: 3px solid #3b2183
+    margin: 0 auto
+    background-color: #FFF
+    border-radius: 3rem 3rem 0 0
+    overflow: hidden
+
+  &__header
+    padding: 0 3rem 
+    height: 5rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #d4cfe2
+    font-size: 2rem
+
+  &__button
+    height: 2em
+    display: flex
+    align-items: center
+    border: none
+    background-color: transparent
+    padding: 3px
+    padding: 0
+    transition: all 0.5s
+    
+    &:focus
+      outline: none
+
+    &:active
+      outline: none
+
+    &:hover
+      cursor: pointer
+      font-size: 2.5rem
+
+  &__button-img
+    height: 100%
+
+  &__workspace-wrp
+    display: flex
+    justify-content: stretch
+
+  &__workspace
+    flex-grow: 1
+    flex-shrink: 1
+    position: relative;
+
+  &__scene
+    width: 29.7rem
+    height: 29.7rem
+    flex-grow: 0
+    flex-shrink: 0
+    background-color: #534e47
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+
+  &__hero
+    position: absolute
+    left: 0
+    top: 0
+    width: 2rem
+    height: 4rem
+    z-index: 2
+    background-size: contain
+    position: relative
+    background-repeat: no-repeat
+
+  &__message
+    position: absolute
+    z-index: 3
+    top: 10rem
+    left: 1rem
+    right: 1rem
+    text-align: center
+    background-color: #ffffffcb 
+    padding: 5px
+    font-size: 1.5rem
+    color: #dd0505
+
+  &__control
+    position: absolute
+    z-index: 10
+    right: 10px
+    top: 0
+
+  &__control-btn-img
+    height: 100%
+
+  &__control-btn
+    width: 3rem
+    height: 3rem
+    padding: 0
+    background-color: transparent
+    border: none
+    transition: all 0.5s
+    margin: 5px
+
+    &:focus
+      outline: none
+
+    &:active
+      outline: none
+
+    &:hover
+      cursor: pointer
+      filter: brightness(1.3)
+
+.blocklyScrollbarHorizontal
+  position: absolute
+  left: 0
+  transform: translate(120px, 519.5px) !important;
+
+.blocklyScrollbarVertical
+  //position: absolute
+  right: 0
+  transform: translate(0, 0.5px) !important;
+
+.blockly__category_1, .blockly__category_2
+  margin: 10px 0
+  
+  
+  
+
+
+    
+
+
+ 
+
+
+
+
+  

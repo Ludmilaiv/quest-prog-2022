@@ -1,0 +1,103 @@
+.modal 
+  font-size: 1rem
+  padding: 1rem
+  max-height: 90vh
+  overflow: hidden
+
+  &__header 
+    width: 100%
+    border-bottom: 1px solid gray
+    font-size: 1.5rem
+    text-align: center
+    padding: 5px
+
+  &__content 
+    width: 100%
+    padding: 10px 5px
+    max-height: 60vh
+    overflow-y: auto
+
+  &>.actions 
+    width: 100%;
+    padding: 10px 5px
+    margin: auto;
+    text-align: center
+
+  &>.close 
+    cursor: pointer
+    position: absolute
+    padding-top: 2px
+    display: flex
+    align-items: baseline
+    justify-content: center
+    line-height: 20px
+    right: -10px
+    top: -10px
+    font-size: 2rem
+    width: 2rem
+    height: 2rem
+    background: #ffffff
+    border-radius: 50%
+    border: 1px solid #cfcece
+
+  &__input
+    display: block
+    width: 100%
+    margin-bottom: 0.5rem
+    max-width: 20rem
+    border: 1px solid #8a8a8a
+    border-radius: 3px
+    padding: 4px
+    &:focus
+      outline: none
+      border-color: #0A9DD7
+    &_err
+      border-color: #f30000
+      background: #fde6e6
+
+  &__input-wrp
+    display: flex
+    column-gap: 3px
+    max-width: 20rem
+
+  &__flex-container
+    display: flex
+    column-gap: 10px
+    margin-top: 1rem 
+    justify-content: space-between
+
+  &__button
+    height: 5em
+    display: flex
+    align-items: center
+    border: none
+    background-color: transparent
+    padding: 3px
+    padding: 0
+    flex-grow: 0
+    flex-shrink: 0
+    transition: all 0.5s
+    
+    &:focus
+      outline: none
+
+    &:active
+      outline: none
+
+    &:hover
+      cursor: pointer
+      filter: brightness(1.5)
+
+  &__button-img
+    height: 100%
+
+  &__error
+    color: #f30000
+
+  &__desc
+    color: #777777
+  
+  &__title
+    margin: 1rem 0 0.5rem
+    font-size: 1.2rem
+      
