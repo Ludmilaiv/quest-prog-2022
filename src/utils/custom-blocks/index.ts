@@ -187,5 +187,43 @@ export const createCustomBlocks = () => {
     const code = `while(!isGoal()) {if (--loopLimit <= 0) break; ${statements_loop_body}}\n`;
     return code;
   };
+
+  Blockly.Blocks['right3'] = {
+    init: function() {
+      this.appendDummyInput()
+        .appendField('Вправо 3 шага')
+        .appendField(new Blockly.FieldImage('img/arrow-right.png', 15, 15, { alt: '*', flipRtl: 'FALSE' }));
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(60);
+      this.setTooltip('');
+      this.setHelpUrl('');
+    }
+  };
+
+  Blockly.JavaScript['right3'] = function() {
+    // TODO: Assemble JavaScript into code variable.
+    const code = 'await stepRight3();\n';
+    return code;
+  };
+
+  Blockly.Blocks['left2'] = {
+    init: function() {
+      this.appendDummyInput()
+        .appendField('Влево 2 шага')
+        .appendField(new Blockly.FieldImage('img/arrow-left.png', 15, 15, { alt: '*', flipRtl: 'FALSE' }));
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(60);
+      this.setTooltip('');
+      this.setHelpUrl('');
+    }
+  };
+
+  Blockly.JavaScript['left2'] = function() {
+    // TODO: Assemble JavaScript into code variable.
+    const code = 'await stepLeft2();\n';
+    return code;
+  };
 };
 
