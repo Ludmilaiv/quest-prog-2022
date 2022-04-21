@@ -286,7 +286,7 @@ export const LevelMaze2 = () => {
       <audio id='level1-task' src='./sounds/level1-task.mp3'></audio>
       <audio id='level1-clue' src=''></audio>
       <div className='level-b__container'>
-        <LevelHeader className='level-b' taskSound='level1-task' clueSound='level1-clue' clueText={clueText} />
+        <LevelHeader className='level-b' taskSound='level-maze2-task' clueSound='level-maze2-clue' clueText={clueText} />
         <div className='level-b__workspace-wrp'>
           <div className='level-b__workspace'>
             <div className='level-b__control'>
