@@ -295,7 +295,7 @@ export const Level1 = () => {
             <div id="blocklyDiv" className='level-b__blockly-div' style={{height: '100%', width: '100%'}}></div>
 
           </div>
-          <Scene maze={maze} hero='hero1.png' background='level1-back.svg' heroPosition={heroPosition} calibrate={calibrate} message={message}/>
+          <Scene maze={maze} hero='hero1.png' background='level1-back.svg' heroPosition={heroPosition} heroCalibrate={calibrate} message={message}/>
         </div>
       </div>
     </div>

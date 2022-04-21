@@ -31,6 +31,7 @@ const toolbox = {
 const startPos = [0, 5];
 const calibrate = [14, -1];
 const heroSize = [4.5, 4.5];
+const thingsSize = [4.5, 4.5];
 
 const things = [
   {name: 'boompotam.png', pos: [0, 3], key: 2},
@@ -163,7 +164,7 @@ export const LevelJump = () => {
             <div id="blocklyDiv" className='level-b__blockly-div' style={{height: '100%', width: '100%'}}></div>
 
           </div>
-          <Scene maze={maze} hero='suitcase.png' heroSize={heroSize}background='level-jump-back.png' heroPosition={heroPosition} calibrate={calibrate} things={thingsOnScene} message={message}/>
+          <Scene maze={maze} hero='suitcase.png' heroSize={heroSize}background='level-jump-back.png' thingsSize={thingsSize} heroPosition={heroPosition} heroCalibrate={calibrate} things={thingsOnScene} thingsCalibrate={calibrate} message={message}/>
         </div>
       </div>
     </div>
