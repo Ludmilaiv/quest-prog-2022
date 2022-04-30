@@ -124,13 +124,13 @@ export const LevelMaze2 = () => {
   useEffect(() => {
     const workspace = Blockly.inject('blocklyDiv', {toolbox: toolbox});
     setWorkspace(workspace);
-    const state = localStorage.getItem('fd347');
+    const state = localStorage.getItem('4f7tr');
     if (state) {
       Blockly.Xml.domToWorkspace(Blockly.Xml.textToDom(state), workspace);
     }
     workspace.addChangeListener(() => {
       const xml = Blockly.Xml.workspaceToDom(workspace);
-      localStorage.setItem('fd347', Blockly.Xml.domToText(xml));
+      localStorage.setItem('4f7tr', Blockly.Xml.domToText(xml));
     });
   }, []);
 
@@ -241,7 +241,7 @@ export const LevelMaze2 = () => {
   const isGoal = () => {
     if (maze[currentPosition[0]][currentPosition[1]] === 3) {
       stop();
-      setMessage(<span>Ура! Мы добрались до магической книги и нашли нужное нам заклинание на странице 5!</span>);
+      setMessage(<><div>Ура! Мы Добрались до книги заклинаний!</div><a className='level-b__scene-btn' href='https://quest.itgen.io/olimpiad/11q7sio'>Дальше</a></>);
       return true;
     }
     if (maze[currentPosition[0]][currentPosition[1]] === 2) {
@@ -283,8 +283,8 @@ export const LevelMaze2 = () => {
 
   return (
     <div className='level-b'>
-      <audio id='level1-task' src='./sounds/level1-task.mp3'></audio>
-      <audio id='level1-clue' src=''></audio>
+      <audio id='level-maze2-task' src='./sounds/level-maze2-task.mp3'></audio>
+      <audio id='level-maze2-clue' src='./sounds/level-maze2-clue.mp3'></audio>
       <div className='level-b__container'>
         <LevelHeader className='level-b' taskSound='level-maze2-task' clueSound='level-maze2-clue' clueText={clueText} />
         <div className='level-b__workspace-wrp'>

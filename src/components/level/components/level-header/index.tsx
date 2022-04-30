@@ -22,7 +22,7 @@ export const LevelHeader = ({className, clueText, clueSound, taskSound}: props) 
     <span>Задание</span>
   </button>;
 
-  const buttonClue = <button className={className + '__button'} type='button' onClick={playClue}>
+  const buttonClue = <button className={className + '__button'} type='button'>
     <img className={className + '__button-img'} src='./img/question.png' alt='Подсказка' />
   </button>;
 

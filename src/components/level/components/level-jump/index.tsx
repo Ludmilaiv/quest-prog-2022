@@ -104,7 +104,7 @@ export const LevelJump = () => {
 
   const isGoal = () => {
     if (suitcase.length === 4) {
-      setMessage(<span>Ура! Мы собрали 4 волшебных твари!</span>);
+      setMessage(<><div>Ура! Мы собрали всех волшебных тварей!</div><a className='level-b__scene-btn' href='https://quest.itgen.io/olimpiad/10ef7w7f4'>Дальше</a></>);
       return true;
     }
     return false;
@@ -139,10 +139,10 @@ export const LevelJump = () => {
 
   return (
     <div className='level-b'>
-      <audio id='level-jump-task' src=''></audio>
-      <audio id='level-jump-clue' src=''></audio>
+      <audio id='level-jump-task' src='./sounds/level-jump-task.mp3'></audio>
+      <audio id='level-jump-clue' src='./sounds/level-jump-clue.mp3'></audio>
       <div className='level-b__container'>
-        <LevelHeader className='level-b' taskSound='level1-task' clueSound='level1-clue' clueText={clueText} />
+        <LevelHeader className='level-b' taskSound='level-jump-task' clueSound='level-jump-clue' clueText={clueText} />
         <div className='level-b__workspace-wrp'>
           <div className='level-b__workspace'>
             <div className='level-b__control'>

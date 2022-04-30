@@ -227,7 +227,7 @@ export const Level1 = () => {
   const isGoal = () => {
     if (maze[currentPosition[0]][currentPosition[1]] === 3) {
       stop();
-      setMessage(<span>Ура! Мы нашли нужную дверь!<br/>Номер двери - 2</span>);
+      setMessage(<><div>Ура! Мы нашли нужную дверь!</div><a className='level-b__scene-btn' href='https://quest.itgen.io/olimpiad/04euy6e5'>Дальше</a></>);
       return true;
     }
     if (maze[currentPosition[0]][currentPosition[1]] === 2) {
@@ -270,7 +270,7 @@ export const Level1 = () => {
   return (
     <div className='level-b'>
       <audio id='level1-task' src='./sounds/level1-task.mp3'></audio>
-      <audio id='level1-clue' src=''></audio>
+      <audio id='level1-clue' src='./sounds/level1-clue.mp3'></audio>
       <div className='level-b__container'>
         <LevelHeader className='level-b' taskSound='level1-task' clueSound='level1-clue' clueText={clueText} />
         <div className='level-b__workspace-wrp'>

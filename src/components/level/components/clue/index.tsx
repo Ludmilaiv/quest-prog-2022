@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type props = {clueText?: JSX.Element; playClue: () => void};
 
 export const Clue= ({clueText, playClue}: props) => {
+
+  useEffect(() => {
+    playClue();
+  }, []);
 
   return (
     <div className='modal__flex-container'>
